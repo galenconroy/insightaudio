@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 //first row of pricing-table (one fn for each button)
-  $("tr:first td:first").click(function(){
+  $("tr:nth-child(1) td:nth-child(1)").click(function(){
     $(this).toggleClass("selected");
     $("tr:nth-child(2) td:nth-child(-n+3)").toggleClass("top");
     $(this).siblings().removeClass("selected");
@@ -10,7 +10,7 @@ $(document).ready(function(){
     $("tr:nth-child(2) td:nth-child(-n+3)").removeClass("selected");
     $("tr:nth-child(3) td").removeClass("top");
   });
-  $("tr:first td:last").click(function(){
+  $("tr:nth-child(1) td:nth-child(2)").click(function(){
     $(this).toggleClass("selected");
     $("tr:nth-child(2) td:nth-child(n+4)").toggleClass("top");
     $(this).siblings().removeClass("selected");
