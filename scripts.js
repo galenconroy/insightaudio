@@ -20,7 +20,7 @@ $(document).ready(function(){
   });
 // second row of pircing-table (six buttons)
 
-  $("tr:nth-child(2) td:first").click(function(){
+  $("tr:nth-child(2) td:nth-child(1)").click(function(){
     $(this).toggleClass("selected");
     $("tr:nth-child(3) td:nth-child(1)").toggleClass("top");
     $(this).siblings().removeClass("selected");
