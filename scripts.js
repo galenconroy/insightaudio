@@ -4,18 +4,18 @@ $(document).ready(function(){
 //first row of pricing-table (one fn for each button)
   $("tr:nth-child(1) td:nth-child(1)").click(function(){
     $(this).toggleClass("selected");
-    $("tr:nth-child(2) td:nth-child(-n+3)").toggleClass("top");
-    $(this).siblings().removeClass("selected");
-    $("tr:nth-child(2) td:nth-child(n+4)").removeClass("top");
-    $("tr:nth-child(2) td:nth-child(-n+3)").removeClass("selected");
-    $("tr:nth-child(3) td").removeClass("top");
-  });
-  $("tr:nth-child(1) td:nth-child(2)").click(function(){
-    $(this).toggleClass("selected");
     $("tr:nth-child(2) td:nth-child(n+4)").toggleClass("top");
     $(this).siblings().removeClass("selected");
     $("tr:nth-child(2) td:nth-child(-n+3)").removeClass("top");
     $("tr:nth-child(2) td:nth-child(n+4)").removeClass("selected");
+    $("tr:nth-child(3) td").removeClass("top");
+  });
+  $("tr:nth-child(1) td:nth-child(2)").click(function(){
+    $(this).toggleClass("selected");
+    $("tr:nth-child(2) td:nth-child(-n+3)").toggleClass("top");
+    $(this).siblings().removeClass("selected");
+    $("tr:nth-child(2) td:nth-child(n+4)").removeClass("top");
+    $("tr:nth-child(2) td:nth-child(-n+3)").removeClass("selected");
     $("tr:nth-child(3) td").removeClass("top");
   });
 // second row of pircing-table (six buttons)
